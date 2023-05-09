@@ -5,7 +5,7 @@ def NumBytes(num):
     bits = bin(num)
 
     
-    return ceil(len(bits)/8)
+    return ceil((len(bits) - 2)/8)
 
 def CompressFile(input, output):
     f = open(input, "r")
